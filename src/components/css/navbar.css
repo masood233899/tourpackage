@@ -1,0 +1,7 @@
+.custom-button {
+    color: white;
+  }
+  
+  .custom-button:hover {
+    background-color :rgb(12, 8, 55) !important; /* Change this to the desired hover color */
+  }

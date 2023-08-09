@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    --color: white; /* Define the color variable for the white blocks */
+    scroll-behavior: smooth;
+  }
+  
+  .parallax-container {
+    position: relative;
+    height: 200vh; /* Increase this value if you have a longer page */
+  }
+  
+  .parallax-image {
+    text-align: center;
+    color: var(--color);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    /* this is where the magic happens: */
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+
+  }
+  
+  .parallax-image:nth-child(2) {
+    z-index: -1; /* Adjust the z-index to send it behind the first image */
+  }
+  
+  .parallax-image:nth-child(3) {
+    z-index: -2; /* Adjust the z-index to send it behind the second image */
+  }
+  
+  .parallax-content {
+    position: absolute; /* Change from relative to absolute */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the content */
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    width: 80%; /* Adjust the width of the content as per your preference */
+    scroll-behavior: smooth;
+
+  }
+  
+  .parallax-content:nth-child(2) {
+    top: 30vh; /* Adjust this value to control the content's position */
+    scroll-behavior: smooth;
+
+  }
+  
+  .parallax-content:nth-child(3) {
+    top: 30vh; /* Adjust this value to control the content's position */
+    scroll-behavior: smooth;
+
+  }
+  
+  /* Add styles for the white blocks */
+  .white-block {
+    height: 30vh;
+    width: 100%;
+    background-color: var(--color);
+  }
+  
